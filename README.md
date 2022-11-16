@@ -7,5 +7,5 @@
 
 * or render
 ```
-docker run -it -v  $(shell pwd):/files ghcr.io/racklet/render-drawio-action:v1 --formats png
+docker run -it -v  $(pwd):/files ghcr.io/racklet/render-drawio-action:v1 --formats png
 ``` 

@@ -26,8 +26,8 @@ plt = ggplot(data=data,
        aes(x=ro, y=value, group=Brightness))  +
   geom_line(size=1, aes(colour=Brightness)) +
   geom_point(color='white', stroke=3, shape=21, size=5, aes(fill=Brightness)) +
-  scale_fill_manual(values=c("#2299DD", "#66AA99")) +
-  scale_color_manual(values=c("#2299DD", "#66AA99")) +
+  scale_fill_manual(values=c("#004C99", "#02AA00")) +
+  scale_color_manual(values=c("#004C99", "#02AA00")) +
   ylab("Mean RT (ms)") +
   xlab("Response Option") +
   ylim(480, 620) +
