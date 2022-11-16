@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 
+*.pdf
 *.Rproj
 .vscode/
