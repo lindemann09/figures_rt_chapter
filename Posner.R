@@ -16,7 +16,7 @@ data = df %>% pivot_longer(cols = c("bright", "blurred"),
 # add interaction
 tmp = data %>%
   mutate(value = value + c(0,0, -25, 20),
-         cond="b) Different Processing Stage")
+         cond="b) Different Processing Stages")
 data = rbind(data, tmp) %>% mutate(
   Brightness =factor(Brightness)
 )
