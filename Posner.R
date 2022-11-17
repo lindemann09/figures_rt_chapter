@@ -1,6 +1,12 @@
 library(tidyverse)
 library(ggplot2)
 
+colours = c("#bd3106", "#d9700e", "#e9a00e", "#eebe04",
+            "#5b7314", "#c3d6ce", "#89a6bb", "#454b87")
+
+colours = c("#2c2d54", "#434475", "#6b6ca3", "#969bc7",
+                     "#87bcbd", "#89ab7c", "#6f9954")
+
 # make date
 br_effect = 20
 ro_effect = 50
@@ -26,9 +32,9 @@ plt = ggplot(data=data,
        aes(x=ro, y=value, group=Brightness))  +
   geom_line(size=1, aes(colour=Brightness)) +
   geom_point(color='white', stroke=3, shape=21, size=5, aes(fill=Brightness)) +
-  scale_fill_manual(values=c("#004C99", "#02AA00")) +
-  scale_color_manual(values=c("#004C99", "#02AA00")) +
-  ylab("Mean RT (ms)") +
+  scale_fill_manual(values=c("#2c2d54", "#6f9954")) +
+  scale_color_manual(values=c("#2c2d54", "#6f9954")) +
+  ylab("Reaction Times (ms)") +
   xlab("Response Option") +
   ylim(480, 620) +
   facet_wrap(.~cond) +
