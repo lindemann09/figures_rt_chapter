@@ -40,9 +40,10 @@ plt = ggplot(data=data,
   facet_wrap(.~cond) +
   theme_minimal(base_size=14) +
   theme(axis.line = element_line(size=0.5),
-        axis.ticks = element_line(size=0.5))
+        axis.ticks = element_line(size=0.5),
+        plot.background = element_rect(fill = "white"))
 
 print(plt)
 
-ggsave("Posner.png", plt, device="png", width=10, height = 4)
+ggsave("Fig.3.1.png", plt, device="png", units="px", width=2000, height = 2000*0.4)
 
